@@ -1,0 +1,101 @@
+*{margin:0;padding:0;}
+html,body,#app,.wrapper{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    
+}
+
+body{
+    font-family:"Helvetica Neue",Helvetica, "Microsoft YaHei", Arial, STHeiTi, sans-serif;
+    color:#777777;
+    background: -webkit-linear-gradient(#185C9D, #41CCA2); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#185C9D, #41CCA2); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#185C9D, #41CCA2); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#185C9D, #41CCA2); /* 标准的语法 */
+}
+a{text-decoration: none}
+
+.el-badge__content{
+    border:0px !important;
+}
+.content{
+    background: none repeat scroll 0 0 #f0f3f4;
+    position: absolute;
+    left: 200px;
+    right: 0;
+    top: 66px;
+    bottom:0;
+    width: auto;
+    padding:25px 40px 25px 40px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+.clear{
+    width:100%;
+    height:0px;
+    clear:both;
+}
+.ql-editor{
+    background-color: #fff;
+      min-height: 20em;
+      padding-bottom: 1em;
+    max-height: 25em;
+}
+.ql-toolbar{
+    background-color: #fff;
+}
+.addNews{
+    float:right;
+    margin-bottom: 10px;
+}
+.order{
+    margin-top: 20px;
+}
+/* 登录页 */
+.login-container{
+    margin:10pc auto;
+    padding:35px 35px 15px;
+    width:350px;
+    border-radius:5px;
+    background: rgba(255, 255, 255, 0.2);
+    background-clip:padding-box;
+    
+}
+.title{margin:0 auto 40px;color:#fff;text-align:center}
+.remember{margin:0 0 35px}
+.el-menu-item,.el-submenu__title{color:#fff}
+.el-submenu__title:hover{background-color:#00c1de}
+.el-submenu .el-menu-item{background-color:#333744}
+.el-submenu .el-menu-item:hover{background-color:#4a5064}
+.el-menu-item.is-active,.el-menu-item.is-active:hover,.el-submenu .el-menu-item.is-active,.el-submenu .el-menu-item.is-active:hover{background-color:#00c1de;color:#fff}
+.el-menu .iconfont{margin-right:6px;vertical-align:baseline}
+.warp-breadcrum{padding:10px 0;border-bottom:1px solid #efefef}
+.warp-main{padding-top:20px}
+.container{position:absolute;top:0;bottom:0;width:100%}
+.topbar-wrap{padding:0;height:50px;background:#1d8ce0;line-height:50px}
+.topbar-btn{color:#fff}
+.topbar-btn:hover{background-color:#58b7ff}
+.topbar-logo{width:49px;line-height:26px}
+.topbar-logo,.topbar-title{float:left;border-right:1px solid #1d8ce0;text-align:center}
+.topbar-title{width:129px}
+.topbar-account{float:right;padding-right:9pt;font-size:9pt}
+.userinfo-inner{padding-left:10px;color:#fff;cursor:pointer}
+.main{position:absolute;top:50px;bottom:0;display:flex;overflow:hidden}
+aside{width:180px;flex:0 0 180px}
+.el-menu{height:100%;border-radius:0;background-color:#333744}
+.collapsed{width:50px}
+.submenu{position:absolute;top:0;left:50px;z-index:9999;display:none;height:auto}
+.menu-collapsed{width:50px;flex:0 0 50px}
+.menu-expanded{width:180px;flex:0 0 180px}
+.menu-toggle{height:26px;background:#4a5064;color:#fff;text-align:center;line-height:30px}
+.content-container{overflow-y:auto;padding:10px;background:#fff;flex:1}
+.content-wrapper{box-sizing:border-box;background-color:#fff}
+.time{color:#999;font-size:13px}
+.bottom{margin-top:13px;line-height:9pt}
+.el-input__inner{
+    background: rgba(255, 255, 255, 0.2);
+}
+.el-input__inner::placeholder{
+    color: #666;
+}
