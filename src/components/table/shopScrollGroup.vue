@@ -35,7 +35,7 @@
         scrollInfo(){
           this.listLoading = true;
           //读取轮播列表
-          this.$post('http://127.0.0.1:4000/getAddress').then(res => {
+          this.$post('http://www.spn365.cn:4000/getAddress').then(res => {
             console.log(res[0].d_name)
             this.shopIndexScroll = res;
             this.listLoading = false;

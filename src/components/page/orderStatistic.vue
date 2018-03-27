@@ -32,7 +32,7 @@
         },
         methods:{
             getInfo(){
-                this.$fetch('http://127.0.0.1:4000/patientCount').then(res => {
+                this.$fetch('http://www.spn365.cn:4000/patientCount').then(res => {
                     
                     this.patientCount = res;
                     

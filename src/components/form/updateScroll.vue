@@ -50,7 +50,7 @@
         },
         methods:{
             init(){
-                this.$post('http://127.0.0.1:4000/getDoctor').then(res => {
+                this.$post('http://www.spn365.cn:4000/getDoctor').then(res => {
                     this.options = res
                 });
             },
@@ -58,7 +58,7 @@
             scrollInfo() {
                 var qs = require('qs');
                 this.form.id = this.$route.query.id;
-                this.$post('http://127.0.0.1:4000/getTheAddress' ,qs.stringify(this.form)).then(res => {
+                this.$post('http://www.spn365.cn:4000/getTheAddress' ,qs.stringify(this.form)).then(res => {
                     console.log(res)
                     this.form = res[0];
                });
@@ -67,7 +67,7 @@
                 //提交
                 var qs = require('qs');
                 // console.log(qs.stringify(this.form))
-                this.$post('http://127.0.0.1:4000/updateAddress',qs.stringify(this.form)).then(res => {
+                this.$post('http://www.spn365.cn:4000/updateAddress',qs.stringify(this.form)).then(res => {
                     if(res.message == "OK") {
                         this.$message({
                             message: "修改成功",

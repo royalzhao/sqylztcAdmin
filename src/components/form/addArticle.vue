@@ -231,7 +231,7 @@
             uploadImg(file) {
                 var fd = new FormData();
                 fd.append ("avatar" , file.file);
-                this.$post('http://127.0.0.1:4000/upload',fd).then(res => {
+                this.$post('http://www.spn365.cn:4000/upload',fd).then(res => {
                     
                     this.form.n_img = res.filePath;
 
@@ -241,7 +241,7 @@
             uploadContentImg(file) {
                 var fd = new FormData();
                 fd.append ("avatar" , file.file);
-                this.$post('http://127.0.0.1:4000/upload',fd).then(res => {
+                this.$post('http://www.spn365.cn:4000/upload',fd).then(res => {
                     
                     var cc = "<img src='"+res.filePath+"'/>";
                     this.form.n_content += cc;
@@ -268,7 +268,7 @@
                     
                     
                     if(valid) {
-                        this.$post('http://127.0.0.1:4000/saveArticle',qs.stringify(this.form)).then(res => {
+                        this.$post('http://www.spn365.cn:4000/saveArticle',qs.stringify(this.form)).then(res => {
                             if(res.message == "OK") {
                                 this.$message({
                                     message: "添加成功",

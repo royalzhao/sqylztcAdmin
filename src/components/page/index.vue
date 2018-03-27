@@ -44,7 +44,7 @@
           if(valid) {
             var qs = require('qs');
             this.logining = true;
-            this.$post('http://127.0.0.1:4000/login',qs.stringify(this.account)).then(res => {
+            this.$post('http://www.spn365.cn:4000/login',qs.stringify(this.account)).then(res => {
               this.logining = false;
               if(res.message == 'ERROR') {
                   this.$message({

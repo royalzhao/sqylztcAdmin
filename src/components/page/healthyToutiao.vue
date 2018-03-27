@@ -102,7 +102,7 @@
           
           this.$confirm('确定要删除选中文章吗？')
             .then(_ => {
-              this.$post('http://127.0.0.1:4000/deleteToutiaoAll',qs.stringify(this.info)).then(res => {
+              this.$post('http://www.spn365.cn:4000/deleteToutiaoAll',qs.stringify(this.info)).then(res => {
                 
                 this.newsInfo();
                 this.$message({
@@ -134,12 +134,12 @@
         info.n_type = this.map.n_type;
         info.key = this.map.key;
         //读取商品列表
-        this.$post('http://127.0.0.1:4000/showToutiaoList',qs.stringify(info)).then(res => {
+        this.$post('http://www.spn365.cn:4000/showToutiaoList',qs.stringify(info)).then(res => {
          console.log(res)
           this.news = res;
           
           this.listLoading = false;
-          this.$post('http://127.0.0.1:4000/showToutiaoNum',qs.stringify(info)).then(res2 => {
+          this.$post('http://www.spn365.cn:4000/showToutiaoNum',qs.stringify(info)).then(res2 => {
           
             console.log(res2[0].count)
             this.total = res2[0].count;
@@ -166,7 +166,7 @@
         
         this.$confirm('确定要删除该商品吗？')
           .then(_ => {
-            this.$post('http://127.0.0.1:4000/deleteArticle',qs.stringify(this.map)).then(res => {
+            this.$post('http://www.spn365.cn:4000/deleteArticle',qs.stringify(this.map)).then(res => {
               
               this.newsInfo();
               this.$message({

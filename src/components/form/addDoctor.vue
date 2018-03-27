@@ -95,7 +95,7 @@
         },
         methods:{
             init(){
-                this.$fetch('http://127.0.0.1:4000/getAddress').then(res => {
+                this.$fetch('http://www.spn365.cn:4000/getAddress').then(res => {
                     this.options = res
                 });
             },
@@ -103,7 +103,7 @@
             uploadImg(file) {
                 var fd = new FormData();
                 fd.append ("avatar" , file.file);
-                this.$post('http://127.0.0.1:4000/upload',fd).then(res => {
+                this.$post('http://www.spn365.cn:4000/upload',fd).then(res => {
                     
                     this.form.d_face = res.filePath;
 
@@ -130,7 +130,7 @@
                     
                     
                     if(valid) {
-                        this.$post('http://127.0.0.1:4000/saveDoctor',qs.stringify(this.form)).then(res => {
+                        this.$post('http://www.spn365.cn:4000/saveDoctor',qs.stringify(this.form)).then(res => {
                             if(res.message == "OK") {
                                 this.$message({
                                     message: "添加成功",

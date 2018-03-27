@@ -74,7 +74,7 @@
              //商品信息初始化
             goodsInfo() {
                 var qs = require('qs');
-                this.$post('http://127.0.0.1:4000/getThePhone' ,qs.stringify(this.form)).then(res => {
+                this.$post('http://www.spn365.cn:4000/getThePhone' ,qs.stringify(this.form)).then(res => {
                     
                     this.form = res[0];
                 });
@@ -86,7 +86,7 @@
                     var qs = require('qs');
                     
                     if(valid) {
-                        this.$post('http://127.0.0.1:4000/updateThePhone',qs.stringify(this.form)).then(res => {
+                        this.$post('http://www.spn365.cn:4000/updateThePhone',qs.stringify(this.form)).then(res => {
                             if(res.message == "OK") {
                                 this.$message({
                                     message: "修改成功",

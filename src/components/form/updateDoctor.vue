@@ -102,14 +102,14 @@
         },
         methods:{
             init(){
-                this.$fetch('http://127.0.0.1:4000/getAddress').then(res => {
+                this.$fetch('http://www.spn365.cn:4000/getAddress').then(res => {
                     this.options = res
                 });
             },
             doctorInfo() {
                 var qs = require('qs');
                 this.map.d_id = this.$route.query.d_id
-                this.$post('http://127.0.0.1:4000/showDoctorById',qs.stringify(this.map)).then(res => {
+                this.$post('http://www.spn365.cn:4000/showDoctorById',qs.stringify(this.map)).then(res => {
                   console.log(res)
                     this.form = res[0];
                 });
@@ -118,7 +118,7 @@
             uploadImg(file) {
                 var fd = new FormData();
                 fd.append ("avatar" , file.file);
-                this.$post('http://127.0.0.1:4000/upload',fd).then(res => {
+                this.$post('http://www.spn365.cn:4000/upload',fd).then(res => {
                     
                     this.form.d_face = res.filePath;
 
@@ -145,7 +145,7 @@
                     
                     
                     if(valid) {
-                        this.$post('http://127.0.0.1:4000/updateDoctor',qs.stringify(this.form)).then(res => {
+                        this.$post('http://www.spn365.cn:4000/updateDoctor',qs.stringify(this.form)).then(res => {
                             if(res.message == "OK") {
                                 this.$message({
                                     message: "修改成功",

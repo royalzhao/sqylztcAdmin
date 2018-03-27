@@ -55,7 +55,7 @@
                     
                    
                     if(valid) {
-                        this.$post('http://127.0.0.1:4000/addPhone',qs.stringify(this.form)).then(res => {
+                        this.$post('http://www.spn365.cn:4000/addPhone',qs.stringify(this.form)).then(res => {
                             if(res.message == "OK") {
                                 this.$message({
                                     message: "添加成功",

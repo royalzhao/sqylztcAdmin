@@ -60,7 +60,7 @@
           this.info.ids = ids
           this.$confirm('确定要删除选中信息吗？')
             .then(_ => {
-              this.$post('http://127.0.0.1:4000/delAllPhone',qs.stringify(this.info)).then(res => {
+              this.$post('http://www.spn365.cn:4000/delAllPhone',qs.stringify(this.info)).then(res => {
                 if(res.message == "OK"){
                   this.goodsInfo();
                   this.$message({
@@ -93,7 +93,7 @@
         var qs = require('qs');
         
         //读取商品列表
-        this.$post('http://127.0.0.1:4000/showAllPhone').then(res => {
+        this.$post('http://www.spn365.cn:4000/showAllPhone').then(res => {
          
           this.goodsList = res;
           
@@ -119,7 +119,7 @@
        
         this.$confirm('确定要删除该信息吗？')
           .then(_ => {
-            this.$post('http://127.0.0.1:4000/delPhone',qs.stringify(this.map)).then(res => {
+            this.$post('http://www.spn365.cn:4000/delPhone',qs.stringify(this.map)).then(res => {
              
               if(res.message == "OK"){
                 this.goodsInfo();

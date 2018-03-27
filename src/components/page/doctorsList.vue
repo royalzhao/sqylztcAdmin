@@ -106,7 +106,7 @@ export default {
         
         this.$confirm('确定要删除选中医生吗？')
           .then(_ => {
-            this.$post('http://127.0.0.1:4000/deleteDoctorAll',qs.stringify(this.info)).then(res => {
+            this.$post('http://www.spn365.cn:4000/deleteDoctorAll',qs.stringify(this.info)).then(res => {
               
               this.newsInfo();
               this.$message({
@@ -137,12 +137,12 @@ export default {
       info.pageSize=this.pageSize;
       
       //读取商品列表
-      this.$post('http://127.0.0.1:4000/showDoctorList',qs.stringify(info)).then(res => {
+      this.$post('http://www.spn365.cn:4000/showDoctorList',qs.stringify(info)).then(res => {
        console.log(res)
         this.news = res;
         
         this.listLoading = false;
-        this.$post('http://127.0.0.1:4000/showDoctorNum',qs.stringify(info)).then(res2 => {
+        this.$post('http://www.spn365.cn:4000/showDoctorNum',qs.stringify(info)).then(res2 => {
         
           //console.log(res2[0].count)
           this.total = res2[0].count;
@@ -169,7 +169,7 @@ export default {
       
       this.$confirm('确定要删除该医生吗？')
         .then(_ => {
-          this.$post('http://127.0.0.1:4000/deleteDoctor',qs.stringify(this.map)).then(res => {
+          this.$post('http://www.spn365.cn:4000/deleteDoctor',qs.stringify(this.map)).then(res => {
             if(res.message == "OK"){
               this.newsInfo();
               this.$message({
