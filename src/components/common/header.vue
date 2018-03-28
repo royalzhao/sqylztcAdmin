@@ -1,18 +1,18 @@
 <template>
     <div class="header">
         <el-row :gutter="10">
-            <el-col :xs="12" :sm="6" :md="4">
+            <el-col :xs="20" :sm="10" :md="8">
                 <div class="logo">  
                     <span class="logo_prefix">社区医疗直通车</span><span class="logo_suffix">后台管理系统</span>
                 </div>
             </el-col>
-            <el-col hidden-xs-only :sm="12" :md="16">
+            <el-col class="hidden-xs-only"  :sm="8" :md="12">
                 <div class="msg">  
                     <span>欢迎你</span>    
                     <span>{{user}}</span>    
                 </div>
             </el-col>
-            <el-col hidden-xs-only :sm="2" :md="2">
+            <el-col class="hidden-xs-only" :sm="2" :md="2">
                 <div class="header-right">
                     <el-dropdown menu-align="start"  >
                         <span >
@@ -25,7 +25,7 @@
                 </div>
             </el-col>
 
-            <el-col :xs="12" :sm="4" :md="2" >
+            <el-col :xs="4" :sm="4" :md="2">
                 <div class="user-header">
                     <el-dropdown trigger="click" menu-align="start">
                         <img src="../../../static/images/b_header.jpg" width="50px" />
