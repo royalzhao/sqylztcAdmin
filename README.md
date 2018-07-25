@@ -1,4 +1,4 @@
-# 社区医疗直通车狗后台理系统客户端
+# 社区医疗直通车后台理系统客户端
 > A Vue.js project
 
 ## Build Setup
